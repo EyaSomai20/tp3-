@@ -1,0 +1,8 @@
+<div>
+  {{maDate | date:'dd-MMMM-yyyy' |lowercase}}
+</div>
+<ng-container [ngSwitch]="ville =='Tunis'||ville=='Sfax'">
+  <p *ngSwitchCase="true">Grande ville</p>
+  <p *ngSwitchDefault>Petite ville</p>
+</ng-container>
+<router-outlet></router-outlet>
